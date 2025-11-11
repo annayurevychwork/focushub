@@ -1,0 +1,259 @@
+:root {
+    --color-bg: #f4f4f9;
+    --color-sidebar-bg: #ffffff;
+    --color-sidebar-text: #333;
+    --color-sidebar-active: #1abc9c;
+    --color-card-bg: #ffffff;
+    --color-text: #333;
+    --color-green: #27ae60;
+    --color-red: #e74c3c;
+    --color-border: #ddd;
+    --border-radius: 10px;
+    --transition: 0.25s ease;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    background-color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 180px;
+    height: 100vh;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    color: var(--color-sidebar-text);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    transition: var(--transition);
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.sidebar a.active {
+    padding-left: 1px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.overview-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.overview-cards .card {
+    flex: 1;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.overview-cards .card p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.overview-cards .card h3 {
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    transition: var(--transition);
+}
+
+li:hover {
+    box-shadow: var(--shadow);
+}
+
+li.transaction-item.income {
+    background-color: #eafaf1;
+}
+
+li.transaction-item.income span {
+    color: var(--color-green);
+}
+
+li.done {
+    background-color: #fff;
+}
+
+li.done .task-title {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li.habit-item.done span.title::after {
+    content: ' ✔';
+    color: var(--color-green);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+li.transaction-item.expense {
+    background-color: #fdeaea;
+}
+
+li.transaction-item.expense span {
+    color: var(--color-red);
+}
+
+li .task-text, li .habit-text {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+li div {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+li div button {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+input, select, button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+#todo input, #habits input, #budget input, #budget select {
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+#todo button, #habits button, #budget button {
+    padding: 8px 14px;
+    border-radius: var(--border-radius);
+    background-color: #f9f9f9;
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+#todo button:hover, #habits button:hover, #budget button:hover {
+    background-color: #f0f0f0;
+}
+
+#timer-display {
+    font-size: 52px;
+    text-align: left;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer-controls button {
+  padding: 8px 14px;
+  border-radius: var(--border-radius);
+  background-color: #f9f9f9;
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+#timer-controls button:hover {
+  background-color: #f0f0f0;
+}

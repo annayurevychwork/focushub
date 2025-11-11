@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusHub</title>
+    <link rel="stylesheet" href="styles/layout.css"> </head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>FocusHub</h2>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#todo">ToDo</a></li>
+                <li><a href="#habits">Habits</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#pomodoro">Pomodoro</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="overview">
+                <h2>Overview</h2> <div class="overview-cards">
+                    <div class="card">
+                        <p>Tasks</p>
+                        <h3 id="overview-tasks">0</h3>
+                    </div>
+                    <div class="card">
+                        <p>Habits</p>
+                        <h3 id="overview-habits">0</h3>
+                    </div>
+                    <div class="card">
+                        <p>Budget</p>
+                        <h3 id="overview-budget">0</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="todo">
+                <div class="card">
+                    <h2>ToDo</h2>
+                    <input type="text" id="todo-input" placeholder="Task title">
+                    <input type="text" id="todo-desc" placeholder="Optional description">
+                    <button id="add-todo">Add</button>
+                    <ul id="todo-list"></ul>
+                </div>
+            </section>
+
+            <section id="habits">
+                <div class="card">
+                    <h2>Habits</h2>
+                    <input type="text" id="habit-input" placeholder="Add habit">
+                    <button id="add-habit">Add</button>
+                    <ul id="habit-list"></ul>
+                </div>
+            </section>
+
+            <section id="budget">
+                <div class="card">
+                    <h2>Budget</h2>
+                    <input type="text" id="budget-name" placeholder="Name">
+                    <input type="number" id="budget-amount" placeholder="Amount">
+                    <select id="budget-type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <button id="add-budget">Add</button>
+                    <ul id="budget-list"></ul>
+                    <p>Total: <span id="budget-total">0</span></p>
+                </div>
+            </section>
+
+            <section id="pomodoro">
+                <div class="card">
+                    <h2>Pomodoro Timer</h2>
+                    <div id="timer-container">
+                    <div id="timer-display">25:00</div>
+                    <div id="timer-controls">
+                        <button id="start-timer">Start</button>
+                        <button id="pause-timer">Pause</button>
+                        <button id="reset-timer">Reset</button>
+                    </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/store.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/habits.js"></script>
+    <script src="js/budget.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
