@@ -1,33 +1,57 @@
-FocusHub
+<div align="center">
+  <h1>🎯 FocusHub</h1>
+  
+  <p>A modular productivity web application featuring ToDo management, Habit tracking, Budgeting, and a Pomodoro Timer—all in one place.</p>
 
-FocusHub is a productivity web application that combines ToDo, Habits, Budget, and Pomodoro Timer in a single interface.
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
+  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://focus-hub-ten.vercel.app)
 
-Features:
-- Overview: displays the number of tasks, habits, and budget balance.
-- ToDo: add, edit, mark as done/undo, and delete tasks.
-- Habits: add daily habits, mark as done, edit, and delete.
-- Budget: track income and expenses, edit and delete transactions.
-- Pomodoro Timer: classic Pomodoro timer with Start, Pause, and Reset buttons.
+  <br/>
 
-Technologies used:
-- HTML5
-- CSS3 with Flexbox
-- JavaScript (ES6+)
-- LocalStorage for data persistence
+  ### 🚀 [View Live Demo](https://my-focus-hub.vercel.app/) 🚀
+</div>
 
-Project Structure:
-The main HTML file is `index.html`. The CSS file is located in the `styles` folder as `layout.css`. All JavaScript files are in the `js` folder and include `store.js`, `tasks.js`, `habits.js`, `budget.js`, `timer.js`, and `main.js`. The application uses LocalStorage to save tasks, habits, and budget data automatically.
+---
 
-Usage:
-1. Clone the repository or download the files.
-2. Open `index.html` in your browser.
-3. Start managing your tasks, habits, budget, and Pomodoro sessions.
+## ✨ Key Features
 
-Screenshot of FocusHub Overview and ToDo section:
-![Overview and Todo](screenshots/overview_todo.png)
+- 📊 **Overview Dashboard:** Instant insights into your daily productivity, including active tasks, habits, and current budget balance.
+- ✅ **Smart ToDo List:** Full CRUD functionality (Create, Read, Update, Delete) for tasks with completion status toggling.
+- 🔄 **Habit Tracker:** Build long-term routines with a daily habit tracker that automatically resets every new day.
+- 💰 **Budget Manager:** Track your income and expenses with real-time balance calculation and transaction history.
+- ⏱️ **Pomodoro Timer:** A classic 25-minute productivity timer to help you stay focused using the Pomodoro technique.
 
-Screenshot of Habits and Budget sections:
-![Habits and Budget](screenshots/habits_budget.png)
+## 🛠️ Technical Implementation & Deployment
 
-Screenshot of Pomodoro section:
-![Pomodoro](screenshots/pomodoro.png)
+This project was built without external frameworks to demonstrate a strong grasp of core web technologies:
+
+- **Frontend:** Semantic HTML5 and responsive CSS3 (Flexbox/Sticky layouts).
+- **Logic:** Vanilla JavaScript (ES6+) with a **Modular Architecture** to keep the code clean and maintainable.
+- **State Management:** Implementation of a custom global store using **LocalStorage** for data persistence (data remains after page refresh).
+- **Hosting:** Deployed via **Vercel** with automated **CI/CD** pipelines from GitHub.
+
+## 📂 Project Structure
+
+- `index.html` — Main entry point and application structure.
+- `styles/layout.css` — Custom styling and UI components.
+- `js/store.js` — Global state logic and LocalStorage integration.
+- `js/tasks.js`, `habits.js`, `budget.js`, `timer.js` — Modular components handling specific business logic.
+
+## 📸 Screenshots
+
+<details>
+  <summary><b>Click to expand screenshots</b></summary>
+  
+  <br/>
+  
+  **Dashboard & ToDo Section:**
+  ![Overview and Todo](screenshots/overview_todo.png)
+
+  **Habits & Budgeting:**
+  ![Habits and Budget](screenshots/habits_budget.png)
+
+  **Pomodoro Timer:**
+  ![Pomodoro](screenshots/pomodoro.png)
+</details>
