@@ -40,18 +40,12 @@ This project was built without external frameworks to demonstrate a strong grasp
 - `js/tasks.js`, `habits.js`, `budget.js`, `timer.js` — Modular components handling specific business logic.
 
 ## 📸 Screenshots
-
-<details>
-  <summary><b>Click to expand screenshots</b></summary>
   
-  <br/>
-  
-  **Dashboard & ToDo Section:**
-  ![Overview and Todo](screenshots/overview_todo.png)
+**Dashboard & ToDo Section:**
+![Overview and Todo](screenshots/overview_todo.png)
 
-  **Habits & Budgeting:**
-  ![Habits and Budget](screenshots/habits_budget.png)
+**Habits & Budgeting:**
+![Habits and Budget](screenshots/habits_budget.png)
 
-  **Pomodoro Timer:**
-  ![Pomodoro](screenshots/pomodoro.png)
-</details>
+**Pomodoro Timer:**
+![Pomodoro](screenshots/pomodoro.png)
